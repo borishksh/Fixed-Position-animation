@@ -1,31 +1,53 @@
-Cube Component
-A React component rendering a rotating cube with customizable color and size using Three.js.
 
-Usage
-jsx
-Copy code
-import Cube from './components/Cube';
+<h1>Cube Component</h1>
 
-const App = () => {
-  return <Cube color={0x00ff00} size={1} />;
-};
-Props
-color (optional): Hexadecimal color (default: 0x00ff00).
-size (optional): Cube size (default: 1).
-Features
-Scene, camera, and renderer setup.
-Responsive cube rotation.
-Cleanup on unmount.
-Dependencies
-React
-Three.js
-Installation
-Install dependencies:
-bash
-Copy code
-npm install react three
-Copy Cube.js to your components.
+<p>A React component rendering a rotating cube with customizable color and size using Three.js.</p>
 
-Use the Cube component.
+<h2>Usage</h2>
 
-Enjoy the rotating cube! 🚀
+<pre><code>&lt;script type="text/javascript" src="./components/Cube"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;
+    const App = () => {
+        return &lt;Cube color={0x00ff00} size={1} /&gt;;
+    };
+&lt;/script&gt;
+</code></pre>
+
+<h2>Props</h2>
+
+<ul>
+    <li><strong>color (optional)</strong>: Hexadecimal color (default: <code>0x00ff00</code>).</li>
+    <li><strong>size (optional)</strong>: Cube size (default: <code>1</code>).</li>
+</ul>
+
+<h2>Features</h2>
+
+<ul>
+    <li>Scene, camera, and renderer setup.</li>
+    <li>Responsive cube rotation.</li>
+    <li>Cleanup on unmount.</li>
+</ul>
+
+<h2>Dependencies</h2>
+
+<ul>
+    <li>React</li>
+    <li>Three.js</li>
+</ul>
+
+<h2>Installation</h2>
+
+<ol>
+    <li>Install dependencies:</li>
+</ol>
+
+<pre><code>$ npm install react three
+</code></pre>
+
+<ol start="2">
+    <li>Copy <code>Cube.js</code> to your components.</li>
+    <li>Use the <code>Cube</code> component.</li>
+</ol>
+
+<p>Enjoy the rotating cube! 🚀</p>
